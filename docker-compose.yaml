@@ -1,0 +1,15 @@
+services:
+  db:
+    build:
+      context: .
+      dockerfile: docker/postgres/Dockerfile
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER} # from .env
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD} # from .env
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD} # from .env
+      POSTGRES_DBS: barberq
+    volumes:
+      - $HOME/.postgres/barberq/data/postgresql:/var/lib/postgresql/data
