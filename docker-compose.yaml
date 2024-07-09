@@ -10,6 +10,6 @@ services:
       POSTGRES_USER: ${POSTGRES_USER} # from .env
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD} # from .env
       DATABASE_PASSWORD: ${DATABASE_PASSWORD} # from .env
-      POSTGRES_DBS: barberq
+      POSTGRES_DBS: barberq, test_barberq
     volumes:
       - $HOME/.postgres/barberq/data/postgresql:/var/lib/postgresql/data

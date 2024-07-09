@@ -12,6 +12,7 @@ pydantic-settings = "^2.3.4"
 python-decouple = "^3.8"
 psycopg2-binary = "^2.9.9"
 django-compressor = "^4.5"
+coverage = "^7.5.4"
 
 [tool.ruff]
 line-length = 79
