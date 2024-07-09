@@ -8,6 +8,8 @@ from barberq.models import (
     Service,
     User,
 )
+from django.db.utils import IntegrityError
+from django.forms import ValidationError
 from django.test import TestCase
 
 
@@ -63,3 +65,38 @@ class TestModelsCreation(TestCase):
         assert service.name == 'Test Service'
         assert service.price == 10.0  # noqa
         assert Service.objects.count() == 1
+
+    def test_barber_creation_without_user(self):
+        with self.assertRaises(IntegrityError):
+            Barber.objects.create(user=None)
+
+    def test_client_creation_without_user(self):
+        with self.assertRaises(IntegrityError):
+            Client.objects.create(user=None)
+
+    def test_create_user_with_invalid_fields(self):
+        with self.assertRaises(ValidationError) as ex:
+            user = User(
+                username='foouser',
+                phone='123',
+                bio='Test bio',
+                password='password',
+                email='a@email.com',
+            )
+            user.full_clean()
+            user.save()
+
+        assert 'Phone' in ex.exception.messages[0]
+
+        with self.assertRaises(ValidationError) as ex:
+            user = User(
+                username='Invalid Username',
+                phone='12312312312',
+                bio='Test bio',
+                password='password',
+                email='a@email.com',
+            )
+            user.full_clean()
+            user.save()
+
+        assert 'username' in ex.exception.messages[0]
