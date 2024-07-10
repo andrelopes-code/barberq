@@ -3,7 +3,8 @@ name = "barberq"
 version = "0.1.0"
 description = ""
 authors = ["André Lopes <andrelopes-code@gmail.com>"]
-readme = "README.md"
+packages = [{ include = "src" }]
+include = ["src/**/*"]
 
 [tool.poetry.dependencies]
 python = "^3.12"

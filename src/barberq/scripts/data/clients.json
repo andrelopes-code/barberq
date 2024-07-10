@@ -1,0 +1,42 @@
+[
+  {
+    "username": "maria_silva",
+    "email": "maria.silva@example.com",
+    "phone": "98345623101",
+    "bio": "Adoro experimentar novos estilos de cortes e sempre busco um atendimento de qualidade.",
+    "first_name": "Maria",
+    "last_name": "Silva"
+  },
+  {
+    "username": "carlos_gomes",
+    "email": "carlos.gomes@gmail.com",
+    "phone": "99374877766",
+    "bio": "Cliente fiel da barbearia há anos. Sempre satisfeito com os serviços prestados.",
+    "first_name": "Carlos",
+    "last_name": "Gomes"
+  },
+  {
+    "username": "laura_ferreira",
+    "email": "laura.ferreira@hotmail.com",
+    "phone": "11136233344",
+    "bio": "Gosto de manter meu visual sempre atualizado. Confio nos profissionais da BarberQ para isso.",
+    "first_name": "Laura",
+    "last_name": "Ferreira"
+  },
+  {
+    "username": "jose_oliveira",
+    "email": "jose.oliveira@example.com",
+    "phone": "87656386098",
+    "bio": "Sempre recomendo a barbearia para meus amigos. Excelente atendimento e profissionais qualificados.",
+    "first_name": "José",
+    "last_name": "Oliveira"
+  },
+  {
+    "username": "ana_rodrigues",
+    "email": "ana.rodrigues@example.com",
+    "phone": "76546127987",
+    "bio": "Busco um ambiente acolhedor e profissionais que entendam minhas preferências.",
+    "first_name": "Ana",
+    "last_name": "Rodrigues"
+  }
+]

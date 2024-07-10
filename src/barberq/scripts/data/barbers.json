@@ -1,0 +1,82 @@
+[
+  {
+    "username": "joaosilva_barber",
+    "email": "joaosilva.barber@example.com",
+    "phone": "98765432101",
+    "bio": "Sou apaixonado por cortes modernos e barbas bem cuidadas. Sempre em busca de novas técnicas para aprimorar meu trabalho.",
+    "first_name": "João",
+    "last_name": "Silva"
+  },
+  {
+    "username": "pedro_oliveira_cuts",
+    "email": "pedro.oliveira.cuts@gmail.com",
+    "phone": "99988877766",
+    "bio": "Especializado em cortes vintage e estilos clássicos. Adoro criar looks que combinam tradição e estilo contemporâneo.",
+    "first_name": "Pedro",
+    "last_name": "Oliveira"
+  },
+  {
+    "username": "lucas_santos_barber",
+    "email": "lucas.santos.barber@hotmail.com",
+    "phone": "11122233344",
+    "bio": "Experiente em cortes de cabelo para todas as idades. Meu objetivo é proporcionar uma experiência relaxante e de qualidade para todos os clientes.",
+    "first_name": "Lucas",
+    "last_name": "Santos"
+  },
+  {
+    "username": "andre_barbeiro",
+    "email": "andre.barbeiro@example.com",
+    "phone": "87654321098",
+    "bio": "Trabalho com cortes modernos e cuidados especiais para barbas. Sempre pronto para atender meus clientes com excelência.",
+    "first_name": "André",
+    "last_name": "Barbeiro"
+  },
+  {
+    "username": "marcio_corte_perfeito",
+    "email": "marcio.corte.perfeito@gmail.com",
+    "phone": "76543210987",
+    "bio": "Meu objetivo é proporcionar cortes que realcem a beleza de cada cliente. Experiente em diversos estilos e tendências atuais.",
+    "first_name": "Márcio",
+    "last_name": "Corte"
+  },
+  {
+    "username": "ana_barbearia_arte",
+    "email": "ana.barbearia.arte@hotmail.com",
+    "phone": "65432109876",
+    "bio": "Especializada em cortes femininos e penteados modernos. Crio looks que combinam estilo e elegância para todas as ocasiões.",
+    "first_name": "Ana",
+    "last_name": "Barbearia"
+  },
+  {
+    "username": "felipe_cabelos_masc",
+    "email": "felipe.cabelos.masc@example.com",
+    "phone": "54321098765",
+    "bio": "Dedico-me a transformar cortes masculinos em verdadeiras obras de arte. Venha conhecer meu trabalho!",
+    "first_name": "Felipe",
+    "last_name": "Cabelos"
+  },
+  {
+    "username": "mariana_style_cuts",
+    "email": "mariana.style.cuts@gmail.com",
+    "phone": "43210987654",
+    "bio": "Cortes que refletem seu estilo único. Experiente em tendências de moda e cuidados personalizados.",
+    "first_name": "Mariana",
+    "last_name": "Style"
+  },
+  {
+    "username": "bruno_barber_artist",
+    "email": "bruno.barber.artist@hotmail.com",
+    "phone": "32109876543",
+    "bio": "Artista dos cortes masculinos. Crio looks que combinam personalidade e elegância para cada cliente.",
+    "first_name": "Bruno",
+    "last_name": "Barber"
+  },
+  {
+    "username": "carla_cabelo_fino",
+    "email": "carla.cabelo.fino@example.com",
+    "phone": "21098765432",
+    "bio": "Especializada em cuidados para cabelos finos e delicados. Meu objetivo é proporcionar beleza e saúde para todos os tipos de cabelo.",
+    "first_name": "Carla",
+    "last_name": "Cabelo"
+  }
+]
