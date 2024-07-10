@@ -7,12 +7,11 @@
   {% include 'barberq/components/navbar.html' %}
   <!-- Content -->
   <div class="w-full h-full flex px-14">
-    <div class="flex flex-col items-center w-1/2 h-full justify-center">
+    <div class="flex flex-col text-ellipsis items-center w-1/2 h-full justify-center">
       <h1 class="text-5xl font-bold">Bem vindo ao
         <span class="hover:text-blue-500 transition duration-300">BarberQ</span>
         {% if user.is_authenticated %}
-        , {{ user.username }}
-        {% endif %}!
+        , {{ user.first_name }}{% endif %}!
       </h1>
       <p class="text-md mt-2 text-center text-neutral-600">Agende seus cortes de cabelo e barba de forma simples e
         rápida. Na
