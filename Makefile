@@ -7,7 +7,7 @@ db:
 	@docker compose --env-file src/core/.env up --build -d
 
 tailwind:
-	@npx tailwindcss -i ./src/static/src/input.css -o ./src/static/src/output.css --watch
+	@npx tailwindcss -i ./src/static/css/input.css -o ./src/static/css/output.css --watch
 
 test:
 	@cd src ; python manage.py test barberq
