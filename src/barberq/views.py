@@ -3,7 +3,6 @@ from django.http import HttpRequest
 from django.shortcuts import render
 
 
-@login_required
 def home(request: HttpRequest):
     return render(request, 'barberq/index.html')
 

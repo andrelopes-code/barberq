@@ -141,6 +141,20 @@ rcssmin = "1.1.2"
 rjsmin = "1.2.2"
 
 [[package]]
+name = "django-extensions"
+version = "3.2.3"
+description = "Extensions for Django"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "django-extensions-3.2.3.tar.gz", hash = "sha256:44d27919d04e23b3f40231c4ab7af4e61ce832ef46d610cc650d53e68328410a"},
+    {file = "django_extensions-3.2.3-py3-none-any.whl", hash = "sha256:9600b7562f79a92cbf1fde6403c04fee314608fefbb595502e34383ae8203401"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+
+[[package]]
 name = "psycopg2-binary"
 version = "2.9.9"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
@@ -540,4 +554,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "03e3090a7ee061cca475542a554a85aebb10f19b6458e304789f422e113fa544"
+content-hash = "54e71d8bfcdd4eb4e25ab714fb38e59de61096f6d2001e8e9bab9d50dc4dd761"

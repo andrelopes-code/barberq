@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'barberq',
     'compressor',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +86,9 @@ DATABASES = {
         },
     }
 }
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 AUTH_USER_MODEL = 'barberq.User'
 AUTH_PASSWORD_VALIDATORS = [
