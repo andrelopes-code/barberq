@@ -86,7 +86,7 @@ class TestModelsCreation(TestCase):
             user.full_clean()
             user.save()
 
-        assert 'Phone' in ex.exception.messages[0]
+        assert 'telefone' in ex.exception.messages[0]
 
         with self.assertRaises(ValidationError) as ex:
             user = User(
