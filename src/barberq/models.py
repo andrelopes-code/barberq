@@ -1,6 +1,7 @@
-from barberq.utils import validators
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+
+from barberq.utils import validators
 
 
 class ReservationStatusEnum(models.IntegerChoices):
