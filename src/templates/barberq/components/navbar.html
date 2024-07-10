@@ -1,4 +1,5 @@
-<header class=" w-screen h-[80px] sticky top-0 bg-white shadow-2xl shadow-white flex items-center px-14 justify-between">
+<header
+  class=" w-screen h-[80px] absolute top-0 bg-white shadow-2xl shadow-white flex items-center px-14 justify-between">
   <!-- Logo -->
   <a href="{% url 'home' %}" class="flex items-center">
     <i class="fa fa-scissors" aria-hidden="true"></i>
@@ -8,7 +9,7 @@
   <!-- Navbar Links -->
   <nav class="flex gap-14">
     <a href="{% url 'home' %}" class="hover:text-neutral-400 transition duration-200">Início</a>
-    <a href="#agendamento" class="hover:text-neutral-400 transition duration-200">Agendamento</a>
+    <a href="{% url 'reservation' %}" class="hover:text-neutral-400 transition duration-200">Agendamento</a>
     <a href="#servicos" class="hover:text-neutral-400 transition duration-200">Serviços</a>
     <a href="#sobre" class="hover:text-neutral-400 transition duration-200">Sobre</a>
     <a href="#contato" class="hover:text-neutral-400 transition duration-200">Contato</a>
@@ -26,27 +27,27 @@
   <script>
     // example: 11:59AM • Sun, Dec 12
     function getFormattedDateTime() {
-        const monthNames = [
-          "jan", "feb", "mar", "apr", "may", "jun",
-          "jul", "aug", "sep", "oct", "nov", "dec"
-        ];
+      const monthNames = [
+        "jan", "feb", "mar", "apr", "may", "jun",
+        "jul", "aug", "sep", "oct", "nov", "dec"
+      ];
 
-        const dayNames = [
-          "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
-        ];
+      const dayNames = [
+        "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+      ];
 
-        const today = new Date();
-        const hours = today.getHours();
-        const minutes = today.getMinutes();
-        const ampm = hours >= 12 ? 'PM' : 'AM';
-        const hour12 = hours % 12 || 12;
-        const minuteFormatted = minutes < 10 ? `0${minutes}` : minutes;
-        const monthName = monthNames[today.getMonth()];
-        const dayName = dayNames[today.getDay()];
-        const day = today.getDate();
+      const today = new Date();
+      const hours = today.getHours();
+      const minutes = today.getMinutes();
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      const hour12 = hours % 12 || 12;
+      const minuteFormatted = minutes < 10 ? `0${minutes}` : minutes;
+      const monthName = monthNames[today.getMonth()];
+      const dayName = dayNames[today.getDay()];
+      const day = today.getDate();
 
-        return `${hour12}:${minuteFormatted}${ampm} • ${dayName}, ${monthName} ${day}`;
-      }
+      return `${hour12}:${minuteFormatted}${ampm} • ${dayName}, ${monthName} ${day}`;
+    }
     document.getElementById('header-date').innerText = getFormattedDateTime();
   </script>
 </header>
