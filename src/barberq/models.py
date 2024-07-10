@@ -1,5 +1,3 @@
-from typing import override
-
 from barberq.utils import validators
 from django.contrib.auth.models import AbstractUser
 from django.db import models
@@ -28,8 +26,9 @@ class User(AbstractUser):
     bio = models.TextField(null=True, blank=True)
     password = models.CharField(max_length=100, validators=validators.password)
     email = models.EmailField(unique=True)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
 
-    @override
     def save(self, *args, **kwargs):
         # If the user is new, hash the password.
         # Otherwise, check if the password has changed and hash it if it has.
